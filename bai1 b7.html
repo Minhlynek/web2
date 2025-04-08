@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Hot</title>
+    <style>
+        body {
+            background-color: rgb(23, 12, 23);
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-decoration: none;
+        }
+        .album-container {
+            width: 90%;
+            max-width: 1200px;
+        }
+        .album-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .album-list {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .album-item {
+            position: relative;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .album-item:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+        }
+        .album-item img {
+            width: 100%;
+            border-radius: 15px;
+        }
+        .album-name {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .artist-name {
+            font-size: 14px;
+            color: #ccc;
+        }
+        .back-home {
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: #5990bd;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        }
+        .back-home:hover {
+            background-color:#3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="album-container">
+        <div class="album-title">Album Hot</div>
+        <div class="album-list">
+            <div class="album-item">
+                <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/9/3/6/2/936276cc5eced959ca79ff50518a7870.jpg" >
+                <div class="album-name">Album Hoa Tau, Vol. 1.</div>
+                <div class="artist-name">Various Artists</div>
+            </div>
+            <div class="album-item">
+                <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/c/d/e/3/cde3e519a909b44385c220c8ad6b92bc.jpg" >
+                <div class="album-name">Nhắn nhủ (Single)</div>
+                <div class="artist-name">Ronboogs</div>
+            </div>
+            <div class="album-item">
+                <img src="https://photo-resize-zmp3.zmdcdn.me/w600_r1x1_jpeg/cover/8/0/7/5/80751641906eb1271c38a1b8d5d60f2a.jpg" >
+                <div class="album-name">Nơi pháo hoa rực rỡ</div>
+                <div class="artist-name">Hoàng Dũng, orange</div>
+            </div>
+            <div class="album-item">
+                <img src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/d/d/5/d/dd5d00a0b93d8626135d716eb739d125.jpg">
+                <div class="album-name">Xuân hạ thu đông rồi lại xuân 3</div>
+                <div class="artist-name">Bùi Công Nam, Lâm Bảo Ngọc, Anh Tú, Hoàng Dũng</div>
+            </div>
+            <div class="album-item">
+                <img src="https://photo-resize-zmp3.zmdcdn.me/w600_r1x1_jpeg/cover/6/9/e/7/69e78b0dfeecd79b0bed6dd26e8c9ac3.jpg" >
+                <div class="album-name">Chicken Banana (Single)</div>
+                <div class="artist-name">Crazy Music Channel</div>
+            </div>
+        </div>
+    </div>
+        <div class="back-home">
+            <b><a href="index.html">Quay về trang chủ</a></b>
+        </div>
+</body>
+</html>
