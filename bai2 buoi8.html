@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 2 - Tìm số lớn nhất và nhỏ nhất</title>
+</head>
+<style>
+     body {text-align: center;}
+    .back-home {
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: #5990bd;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        }
+        .back-home:hover {
+            background-color:#3498db;
+        }
+  </style>
+<body>
+  <h2>Nhập dãy số (cách nhau bởi dấu cách)</h2>
+  <input type="text" id="daySonhap" placeholder=" VD: 5, 6, 8, 1,... ">
+  <button onclick="timMaxMin()">Tìm max / min</button>
+  <p id="ketQua"></p>
+  <script>
+    function timMaxMin() {
+      let input = document.getElementById("daySonhap").value;
+      let arr = input.split(",").map(Number);
+      if (arr.some(isNaN)) {
+        document.getElementById("ketQua").textContent = "Vui lòng nhập đúng định dạng số!";
+        return;
+      }
+      let max = Math.max(...arr);
+      let min = Math.min(...arr);
+      document.getElementById("ketQua").textContent = `Số lớn nhất là: ${max}; Số nhỏ nhất là: ${min}`;
+    }
+  </script>
+  <a href="index.html" class="back-home">Quay lại Trang Chủ</a>
+</body>
+</html>

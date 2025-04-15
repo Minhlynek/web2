@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Hãy đoán xem</title>
+  <script src="javabb3ab8.js" defer></script>
+  <style>
+     .can {text-align: center;}
+    .back-home {
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: #5990bd;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        }
+        .back-home:hover {
+            background-color:#3498db;
+        }
+  </style>
+</head>
+<body>
+    <div class="can">
+    <h2>Hãy đoán số 0 hay 1</h2>
+    <input type="text" id="userGuess" placeholder="Nhập số bạn muốn đoán">
+    <button onclick="checkGuess()">Kiểm tra</button>
+    <div id="result" class="result"></div>
+    </div>
+    <a href="index.html" class="back-home">Quay lại Trang Chủ</a>
+</body>
+</html>
