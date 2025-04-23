@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đổi màu cho tôi</title>
+  <style>
+    body {
+      transition: background-color 0.5s;
+      text-align: center;
+    }
+
+    .nen-xanh {
+      background-color: lightblue;
+    }
+
+    #doimau {
+      padding: 10px;
+      border: 1px solid #ccc;
+      display: inline-block;
+    }
+    .back-home {
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: #5990bd;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        }
+        .back-home:hover {
+            background-color:#3498db;
+        }
+  </style>
+</head>
+<body>
+<p id="doimau">đổi màu tôi đi</p>
+<br>
+<button onclick="doiNen()">xanh</button>
+<a href="index.html" class="back-home">Quay về trang Chủ</a>
+<script>
+  function doiNen() {
+    document.body.classList.toggle("nen-xanh");
+  }
+</script>
+
+</body>
+</html>
